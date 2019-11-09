@@ -33,11 +33,11 @@ const config = {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist")
   }
-}
+};
 
 module.exports = (env, argv) => {
-  if (argv.mode === 'development') {
-    config.devtool = 'source-map';
+  if (argv.mode === "development") {
+    config.devtool = "source-map";
   }
   return config;
 };

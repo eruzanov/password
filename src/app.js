@@ -7,7 +7,7 @@ function copy() {
   input.select();
   input.setSelectionRange(0, 99999); //For mobile devices
   document.execCommand("copy");
-  input.blur(); 
+  input.blur();
 }
 
 function generate() {

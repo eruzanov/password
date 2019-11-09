@@ -51,4 +51,9 @@ input[name="password"] {
   background-image: url(./GitHub-Mark-32px.png);
   background-repeat: no-repeat;
   background-position: center;
+  opacity: 0.5;
+}
+
+.repo:hover {
+  opacity: 1;
 }
