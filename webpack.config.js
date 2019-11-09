@@ -2,12 +2,10 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
-module.exports = {
-  mode: "development",
+const config = {
   entry: {
     app: "./src/app.js"
   },
-  devtool: "inline-source-map",
   devServer: {
     contentBase: "./dist"
   },
@@ -35,4 +33,11 @@ module.exports = {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist")
   }
+}
+
+module.exports = (env, argv) => {
+  if (argv.mode === 'development') {
+    config.devtool = 'source-map';
+  }
+  return config;
 };
