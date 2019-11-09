@@ -1,0 +1,42 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[name="password"] {
+  margin-right: 10px;
+  padding: 10px;
+  min-width: 400px;
+  font-size: 2rem;
+}
+
+.copy,
+.generate {
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.copy:hover,
+.generate:hover {
+  opacity: 1;
+}
+
+.copy {
+  background-image: url(./copy.svg);
+}
+.generate {
+  background-image: url(./sync.svg);
+}
