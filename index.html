@@ -4,11 +4,27 @@
     <title>generator a password</title>
   </head>
   <body>
-    <main>
-      <input type="text" name="password" />
-      <div class="copy"></div>
-      <div class="generate"></div>
-    </main>
+    <form>
+      <div class="container">
+        <input type="text" name="password" />
+        <input type="button" class="copy" name="copy" />
+        <input type="button" class="generate" name="generate" />
+      </div>
+      <div class="params">
+        <label>
+          <input type="checkbox" name="digit" />
+          digit character
+        </label>
+        <label>
+          <input type="checkbox" name="alphanumeric" />
+          alphanumeric character
+        </label>
+        <label>
+          <input type="checkbox" name="nonWord" />
+          non-word character
+        </label>
+      </div>
+    </form>
     <a class="repo" href="https://github.com/eruzanov/password"></a>
   <script type="text/javascript" src="app.bundle.js"></script></body>
 </html>
