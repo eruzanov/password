@@ -36,6 +36,7 @@ input[name="password"] {
   cursor: pointer;
   opacity: 0.5;
   border: 0;
+  outline: none;
 }
 
 .copy:hover,
