@@ -5,11 +5,18 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-main {
+form {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 input[name="password"] {
@@ -28,6 +35,7 @@ input[name="password"] {
   background-position: center;
   cursor: pointer;
   opacity: 0.5;
+  border: 0;
 }
 
 .copy:hover,
@@ -40,6 +48,10 @@ input[name="password"] {
 }
 .generate {
   background-image: url(./sync.svg);
+}
+
+.params {
+  margin: 30px 0;
 }
 
 .repo {
